@@ -1,0 +1,29 @@
+RewriteEngine On
+
+RewriteRule ^contacto.html?$ contact.php [L]
+RewriteRule ^enviar.srf/?$ sendForm.php [L]
+ErrorDocument 404 /error.php
+ErrorDocument 403 /error.php
+
+#<IfModule mod_expires.c>
+#ExpiresActive On
+#ExpiresDefault "access plus 10 days"
+#ExpiresByType text/css "access plus 1 week"
+#ExpiresByType text/plain "access plus 1 week"
+#ExpiresByType text/html "access 1 month"
+#ExpiresByType image/gif "access plus 1 month"
+#ExpiresByType image/png "access plus 1 month"
+#ExpiresByType image/jpg "access 1 year"
+#ExpiresByType image/jpeg "access plus 1 month"
+#ExpiresByType image/x-icon "access plus 3 months"
+#ExpiresByType application/x-javascript "access plus 1 month"
+#ExpiresByType application/javascript "access plus 1 week"
+#ExpiresByType application/pdf "access 1 month"
+#ExpiresByType application/x-shockwave-flash "access 1 month"
+#ExpiresByType text/javascript "access plus 1 week"
+#ExpiresByType application/x-icon "access plus 3 months"
+#ExpiresDefault "access plus 1 month"
+#</IfModule>
+
+#AddOutputFilterByType DEFLATE text/html text/css application/x-javascript
+

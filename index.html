@@ -1,56 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-	<title>Fabrikat</title>
+	<title>Hostal Aromo</title>
 	<meta charset="utf-8">
-	<meta name="author" content="JALP Laveriano">
-	<meta name="description" content="fabrikat"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<meta name="description" content="fabrikat, la mejor solución en maquinaria"/>
+	<meta name="keywords" content="fabrikat, maquinaria, plataformas subterráneas" />
+	<meta name="author" content="JALP Laveriano">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<link rel="stylesheet" media="all" type="text/css" href="css/style-demo.css">
+	<script src="js/jquery.jcarousellite.js"></script>
+	<link rel="icon" href="/favicon.ico">
 </head>
 <body>
-
 	<header>
 		<div class="logo">
-			<a href="/"><img src="img/logo.png" title="fabrikat" alt="fabrikat"/></a>
+			<a href="/"><img src="images/logo.png" title="fabrikat" alt="fabrikat"/></a>
 		</div>
-
 		<div id="menu_icon"></div>
 		<nav>
 			<ul>
 				<li><a href="/" class="selected">Home</a></li>
-				<li><a href="#">Nosotros</a></li>
-				<li><a href="#">Servicios</a></li>
-				<li><a href="#">Productos</a></li>
-				<li><a href="#">Distribuidores</a></li>
-				<li><a href="contact.html">Contacto</a></li>
+				<li><a href="nosotros.html">Nosotros</a></li>
+				<li><a href="servicios.html">Servicios</a></li>
+				<li><a href="#">Galería</a></li>
+				<li><a href="contacto.html">Contacto</a></li>
 			</ul>
-		</nav><!-- end navigation menu -->
-
+		</nav>
 		<div class="footer clearfix">
 			<div class="rights">
 				<p>Dirección: Calle el palmar nro. <br> 155 Dpto. 602 Salamanca – <br> Ate- Lima</p>
 				<p>Teléfonos: 999933332 / 959135937</p>
-				<p>Email: info@fabrikat.com</p>
+				<p>Email: info@aromo.com</p>
 			</div><!-- end rights -->
 			<ul class="social clearfix">
 				<li><a href="#" class="fb" data-title="Facebook"></a></li>
+				<li><a href="#" class="youtube" data-title="youtube"></a></li>
+				<li><a href="#" class="twitter" data-title="Twitter"></a></li>
+				<li><a href="#" class="linkedin" data-title="Linkedin"></a></li>
 				<li><a href="#" class="google" data-title="Google +"></a></li>
-				<li><a href="#" class="behance" data-title="Behance"></a></li>
-				<!--<li><a href="#" class="twitter" data-title="Twitter"></a></li>
-				<li><a href="#" class="dribble" data-title="Dribble"></a></li>-->
-				<li><a href="#" class="rss" data-title="RSS"></a></li>
-			</ul><!-- end social -->
-		</div ><!-- end footer -->
-	</header><!-- end header -->
-
+				<!--<li><a href="#" class="rss" data-title="RSS"></a></li>-->
+			</ul>
+		</div>
+	</header>
 	<section class="main clearfix">
-		<div class="contenido">
-			<img src="img/bg-home.jpg" class="media" alt="Fabrikant"/>
-		<div>
+		<div class="contenido bg-home">
+			<div class="row info phome">
+				<article>
+					<div class="bienvenida">
+						<h1 class="title">BIENVENIDOS AROMO HOSTAL </h1>
+						<p class="medio">
+							El Hostal Aromo Inn les da la bienvenida a la calida ciudad de Ica y a nuestro acogedor establecimiento situado en el Centro de la ciudad, a unos minutos de las principales atarctivos turisticos, como la Plaza de Armas y la Laguna de Huacahina. En  el Hostal Aromo Inn contamos con el personal calificado para darle un servicio personalizado y hacer de su estadía lo más placentera posible
+						</p>
+						<br>
+						<a href="#" class="more">MÁS INFORMACIÓN</a>
+					</div>
+					<div class="tarifa">
+						<div class="desc">
+							MEJOR TARIFA <br>10% DESCUENTO
+						</div>
+						<div class="estadia">
+							*Estadía mínima de 2 noches consecutivas
+						</div>
+						<a href="#" class="more">RESERVAR AHORA</a>
+					</div>
+				</article>
+				<article class="opt">
+					<div id="jcl-demo">
+						<div class="custom-container auto">
+							<div class="carousel" style="left: 42%;position:fixed;height:180px">
+								<ul>
+									<li><img src="images/galeria/matrimonial.jpg">
+									<div>HABITACIÓN MATRIMONIAL</div></li>
+									<li><img src="images/galeria/familiar.jpg">
+									<div>HABITACIÓN FAMILIAR</div></li>
+									<li><img src="images/galeria/adicionales.jpg">
+									<div>SERVICIOS ADICIONALES</div></li>
+								</ul>
+								
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</article>
+			</div>
+		</div>
 	</section>
+<script type="text/javascript">
+        $(function() {
+            $(".auto .carousel").jCarouselLite({
+                auto: 800,
+                speed: 1000
+            });
+        });
+    </script>
 </body>
 </html>
