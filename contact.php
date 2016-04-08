@@ -33,15 +33,15 @@
 				<li><a href="/">Home</a></li>
 				<li><a href="nosotros.html">Nosotros</a></li>
 				<li><a href="servicios.html">Servicios</a></li>
-				<li><a href="#">Galería</a></li>
+				<li><a href="galeria.html">Galería</a></li>
 				<li><a href="#" class="selected">Contacto</a></li>
 			</ul>
 		</nav>
 		<div class="footer clearfix">
 			<div class="rights">
-				<p>Dirección: Calle el palmar nro. <br> 155 Dpto. 602 Salamanca – <br> Ate- Lima</p>
-				<p>Teléfonos: 999933332 / 959135937</p>
-				<p>Email: info@aromo.com</p>
+				<p>Dirección: Calle el palmar nro. <br> Calle Camaná n° 464 Urb. – <br> Las Mercedes ICA - Perú</p>
+				<p>Teléfono: (056) 229654</p>
+				<p>Email: info@aromoinn.com</p>
 			</div><!-- end rights -->
 			<ul class="social clearfix">
 				<li><a href="#" class="fb" data-title="Facebook"></a></li>
@@ -82,6 +82,9 @@
 						</div>
 					</form>
 				</div>
+			</div>
+			<div class="mapa">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3870.1505919289157!2d-75.73212299999999!3d-14.068283300000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9110e298142d948b%3A0x66cfd19ee3ca8eee!2sCalle+Camana%2C+Ica!5e0!3m2!1ses!2spe!4v1460135784378" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 			</div>
 		</article>
 	</section>

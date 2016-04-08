@@ -76,11 +76,11 @@ ul.social{
 	background-size: cover !important;
 }
 .bg-srv{
-	background: url('../images/bg-servicios.jpg') !important;
+	background: url('../images/servicios.jpg') !important;
 	background-size: cover !important;
 }
 .bg-contact{
-	background: url('../images/bg-contacto.jpg') !important;
+	background: url('../images/contacto.jpg') !important;
 	background-size: cover !important;
 }
 .bg-home .info{
@@ -693,7 +693,17 @@ h5, h6          { font-weight: bolder }
     left: 50%;
     margin-left: -3px;
 }
-
+.mapa{
+	position: absolute;
+	right: 60px;
+	top: 0;
+}
+.mapa iframe{
+	border: 0;
+	height: 443px;
+	margin-top: 25px;
+	width: 480px;
+}
 
 
 
@@ -783,7 +793,7 @@ h5, h6          { font-weight: bolder }
 		height: 140px !important;
 		width: 280px !important;
 		margin-top: 120px;
-}
+	}
 	body{
 		background: #6C0000 !important;
 	}
@@ -813,5 +823,8 @@ h5, h6          { font-weight: bolder }
 	h1.title{
 		font-size: 2em;
 		text-align: center;
+	}
+	.mapa{
+		display: none
 	}
 }
