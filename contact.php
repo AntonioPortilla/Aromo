@@ -55,8 +55,8 @@
 	</header>
 	<section class="main clearfix">
 		<article class="contenido bg-home bg-contact" style="overflow:hidden">
-			<div class="info" style="height:100%;overflow:auto">
-				<div class="box-nosotros">
+			<div class="info conta" style="height:100%;width:50%;float:left">
+				<div class="box-nosotros" style="width:100%">
 					<h2 class="title">CONTACTANOS Y HAS TU RESERVACIÓN</h2>
 					<form class="form-horizontal" id="contact">
 						<div class="form-group">

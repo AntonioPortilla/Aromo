@@ -291,7 +291,7 @@ h5, h6          { font-weight: bolder }
     header nav ul{
         display: block;
         overflow: hidden;
-        margin-top: 55px;
+        margin-top: 25px;
         list-style: none;
     }
 
@@ -694,9 +694,11 @@ h5, h6          { font-weight: bolder }
     margin-left: -3px;
 }
 .mapa{
-	position: absolute;
+	/*position: absolute;
 	right: 60px;
-	top: 0;
+	top: 0;*/
+    width: 50%;
+    float: left;
 }
 .mapa iframe{
 	border: 0;
@@ -827,4 +829,8 @@ h5, h6          { font-weight: bolder }
 	.mapa{
 		display: none
 	}
+    .conta{
+        width: 100% !important;
+        padding: 25px 65px !important;
+    }
 }
