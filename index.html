@@ -9,13 +9,15 @@
 	<meta name="author" content="JALP Laveriano">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<link rel="stylesheet" media="all" type="text/css" href="css/style-demo.css">
-	<script src="js/jquery.jcarousellite.js"></script>
+	<link rel="stylesheet" media="all" type="text/css" href="css/bootstrap.min.css">
+	<!--<script src="js/jquery.jcarousellite.js"></script>-->
 	<link rel="icon" href="/favicon.ico">
 </head>
 <body>
-	<header>
+	<header style="width:305px">
 		<div class="logo">
 			<a href="/"><img src="images/logo.png" title="fabrikat" alt="fabrikat"/></a>
 		</div>
@@ -45,56 +47,60 @@
 			</ul>
 		</div>
 	</header>
-	<section class="main clearfix">
-		<div class="contenido bg-home">
-			<div class="row info phome">
-				<article>
-					<div class="bienvenida">
-						<h1 class="title">BIENVENIDOS AROMO HOSTAL </h1>
-						<p class="medio">
-							El Hostal Aromo Inn les da la bienvenida a la calida ciudad de Ica y a nuestro acogedor establecimiento situado en el Centro de la ciudad, a unos minutos de las principales atarctivos turisticos, como la Plaza de Armas y la Laguna de Huacahina. En  el Hostal Aromo Inn contamos con el personal calificado para darle un servicio personalizado y hacer de su estadía lo más placentera posible
-						</p>
-						<br>
-						<a href="#" class="more">MÁS INFORMACIÓN</a>
-					</div>
-					<div class="tarifa">
-						<div class="desc">
-							MEJOR TARIFA <br>10% DESCUENTO
+	<section class="main clearfix" style="padding-left:305px">
+		<div id="indexCarousel" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#indexCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#indexCarousel" data-slide-to="1"></li>
+				<li data-target="#indexCarousel" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner" role="listbox">
+				<div class="row info phome" style="position:absolute;z-index:999;top:43px;margin-left:25px;width:95%">
+					<article>
+						<div class="bienvenida">
+							<h1 class="title">BIENVENIDOS AROMO HOSTAL </h1>
+							<p class="medio">
+								El Hostal Aromo Inn les da la bienvenida a la calida ciudad de Ica y a nuestro acogedor establecimiento situado en el Centro de la ciudad, a unos minutos de las principales atarctivos turisticos, como la Plaza de Armas y la Laguna de Huacahina. En  el Hostal Aromo Inn contamos con el personal calificado para darle un servicio personalizado y hacer de su estadía lo más placentera posible
+							</p>
+							<br>
+							<a href="#" class="more">MÁS INFORMACIÓN</a>
 						</div>
-						<div class="estadia">
-							*Estadía mínima de 2 noches consecutivas
-						</div>
-						<a href="#" class="more">RESERVAR AHORA</a>
-					</div>
-				</article>
-				<article class="opt">
-					<div id="jcl-demo">
-						<div class="custom-container auto">
-							<div class="carousel" style="left: 42%;position:fixed;height:180px">
-								<ul>
-									<li><img src="images/galeria/matrimonial.jpg">
-									<div>HABITACIÓN MATRIMONIAL</div></li>
-									<li><img src="images/galeria/familiar.jpg">
-									<div>HABITACIÓN FAMILIAR</div></li>
-									<li><img src="images/galeria/adicionales.jpg">
-									<div>SERVICIOS ADICIONALES</div></li>
-								</ul>
-								
+						<div class="tarifa">
+							<div class="desc">
+								MEJOR TARIFA <br>10% DESCUENTO
 							</div>
-							<div class="clear"></div>
+							<div class="estadia">
+								*Estadía mínima de 2 noches consecutivas
+							</div>
+							<a href="#" class="more">RESERVAR AHORA</a>
 						</div>
-					</div>
-				</article>
+					</article>
+				</div>
+				<div class="item active" style="background:#0071BC">
+					<img class="first-slide" src="images/hostal.jpg" alt="centec">
+				</div>
+				<div class="item">
+					<img class="second-slide" src="images/hostal2.jpg" alt="centec">
+				</div>
+				<div class="item">
+					<img class="third-slide" src="images/hostal3.jpg" alt="centec">
+				</div>
 			</div>
+<!--
+<a class="left carousel-control" href="#indexCarousel" role="button" data-slide="prev">
+<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+<span class="sr-only">Atrás</span>
+</a>
+<a class="right carousel-control" href="#indexCarousel" role="button" data-slide="next">
+<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+<span class="sr-only">Next</span>
+</a>-->
 		</div>
 	</section>
-<script type="text/javascript">
-        $(function() {
-            $(".auto .carousel").jCarouselLite({
-                auto: 800,
-                speed: 1000
-            });
-        });
+	<script>
+    	jQuery('#indexCarousel').carousel({
+			interval: 3000
+		});
     </script>
 </body>
 </html>
