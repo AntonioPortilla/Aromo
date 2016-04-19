@@ -108,7 +108,8 @@ a.more{
 	color: white;
 	padding: 5px 10px;
 	font-family: 'AGENCYB';
-	font-size: 1.2em;
+	font-size: 1.5em;
+    text-decoration: none;
 }
 .opt{
 	float: left;
@@ -129,12 +130,15 @@ a.more{
 .tarifa a{
 	margin: 20px;
 	display: block;
+    text-decoration: none;
+    font-size: 1.5em;
 }
 .desc{
 	  font-size: 1.5em;
 }
 .estadia{
 	margin: 8px 0;
+    font-size: 1.2em;
 }
 .circulo{
 	background: url('../images/opciones.png') no-repeat;
