@@ -15,6 +15,16 @@
 	<link rel="stylesheet" media="all" type="text/css" href="css/bootstrap.min.css">
 	<!--<script src="js/jquery.jcarousellite.js"></script>-->
 	<link rel="icon" href="/favicon.ico">
+	<style>
+	@media (max-width:550px){
+		header #menu_icon{
+			margin: 30px 9px 0 0 !important;
+		}
+		.bienvenida a.more{
+			display: none !important;
+		}
+	}
+	</style>
 </head>
 <body>
 	<header style="width:305px">
@@ -47,7 +57,7 @@
 			</ul>
 		</div>
 	</header>
-	<section class="main clearfix" style="padding-left:305px">
+	<section class="main clearfix" style="padding-left:305px;overflow:hidden">
 		<div id="indexCarousel" class="carousel slide" data-ride="carousel">
 			<ol class="carousel-indicators">
 				<li data-target="#indexCarousel" data-slide-to="0" class="active"></li>
