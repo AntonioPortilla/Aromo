@@ -89,7 +89,7 @@ ul.social{
 h1.title{
 	color: #fff;
 	text-shadow:3px 2px 2px #7B6B6B;
-    font: 3em 'AGENCYB';
+    font: 3.5em 'AGENCYB';
 }
 h2.title{
     text-shadow:3px 2px 2px #7B6B6B;
@@ -98,9 +98,11 @@ h2.title{
 p.medio{
 	color: white;
 	width: 70%;
-	font-size: 1em;
+	font-size: 1.2em;
 	text-align: justify;
 	font-weight: normal;
+	background: rgba(0,0,0,.4);
+	padding: 10px;
 }
 a.more{
 	text-decoration: none;
@@ -111,12 +113,15 @@ a.more{
 	font-size: 1.5em;
     text-decoration: none;
 }
+a.more:hover{
+	color: #f1f1f1;
+	text-decoration: none;
+}
 .opt{
 	float: left;
 }
 .bienvenida{
-	width: 70%;
-	float: left;
+	width: 100%;
 }
 .tarifa{
 	width: 30%;
@@ -125,11 +130,11 @@ a.more{
 	color: white;
 	text-align: center;
 	padding-top: 30px;
-    margin-top: 28px;
+    margin-top: 50px;
 }
 .tarifa a{
-	margin: 20px;
-	display: block;
+    margin: 20px;
+    display: block;
     text-decoration: none;
     font-size: 1.5em;
 }
@@ -790,10 +795,19 @@ h5, h6          { font-weight: bolder }
         margin: 0!important;
     }
 }
-
+@media(min-width:551px){
+    a.info{
+        right: 0;
+        position: absolute;
+        margin-top: 228px
+    }
+}
 @media (max-width:550px){
-     .main .work{
+    .main .work{
         width: 100%;
+    }
+    a.info{
+        display: none;
     }
     /*.carousel{
 		left: 0 !important;
@@ -816,7 +830,9 @@ h5, h6          { font-weight: bolder }
 		padding: 0 !important;
 	}
 	.phome{
-		padding: 15px !important;
+		padding: 5px !important;
+		top: -21px !important;
+		margin-left: 5px !important;
 	}
 	p.medio{
 		width: 100%;
@@ -826,7 +842,7 @@ h5, h6          { font-weight: bolder }
 	}
 	.tarifa{
 		width: 100%;
-		margin-top: 25px;
+		margin-top: 0px;
 	}
 	h1.title{
 		font-size: 2em;
@@ -838,6 +854,12 @@ h5, h6          { font-weight: bolder }
     .conta{
         width: 100% !important;
         padding: 25px 65px !important;
+    }
+    section.main{
+    	padding-left: 0 !important;
+    }
+    div.carousel-inner{
+    	overflow: initial !important;
     }
 }
 

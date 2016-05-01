@@ -39,7 +39,8 @@
 		</nav>
 		<div class="footer clearfix">
 			<div class="rights">
-				<p>Dirección: Calle el palmar nro. <br> Calle Camaná n° 464 Urb. – <br> Las Mercedes ICA - Perú</p>
+				<p>Dirección: Calle Camana N° 464 <br> 
+				Urb. Las Mercedes ICA - PERU</p>
 				<p>Teléfono: (056) 229654</p>
 				<p>Email: info@aromoinn.com</p>
 			</div><!-- end rights -->
